@@ -7,6 +7,13 @@ with open("psw.txt", "r") as d:
 	for x in d:
 		l.append(x)
 		#print(x)
+#after researching
+#removes dupes by trasforming a list in a set
+#order is destroyed
+l=list(set(l))
+
+"""
+#before researching
 for z in range(len(l)-1):
 	try:
 		for x in range(len(l)-1):
@@ -16,8 +23,9 @@ for z in range(len(l)-1):
 	except IndexError:
 		continue
 	c+=1
-	
-#print(l)
+"""	
+
+print(l)
 
 os.system("echo.>output.txt")
 with open("output.txt","w") as f:
